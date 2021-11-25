@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  background-image: url(img/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 50px 1fr 100px 200px;
+  grid-template-areas: "myHeader myHeader myHeader" "myNav myNav myNav" "mySection mySection mySection" "myFooter myFooter myFooter";
+}
+
+.logoH {
+  margin: 0%;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  color: #fff;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 5px 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.img {
+  transition: transform 0.5s ease;
+}
+
+.img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+a {
+  text-decoration: none;
+  color: #53054d;
+}
+
+.gradienteH {
+  height: 40vh;
+  width: 100%;
+  background-image: linear-gradient(to top, #b95aa5, pink);
+}
+
+form {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+h3 {
+  color: darkslateblue;
+  font-size: large;
+  font-family: "Lucida Sans";
+  font-weight: bolder;
+  text-align: center;
+}
+
+legend {
+  color: darkviolet;
+  font-size: large;
+  font-family: lucida;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.titulo {
+  color: slateblue;
+  font-family: "Harabara Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Harabara Bold"), url("Harabara.woff") format("woff");
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  color: #ffe865;
+  background-color: rgba(215, 169, 226, 0.212);
+  font-size: large;
+  word-spacing: 1vh;
+  text-align: justify;
+}
+
+footer {
+  grid-area: myFooter;
+}
+
+ul {
+  list-style: none;
+  background-color: transparent;
+}
+
+h2 {
+  color: blueviolet;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+}
+
+section div {
+  background-color: #c891ec;
+  border: indigo solid 3px;
+  border-radius: 5px;
+  margin: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch;
+}
+
+@font-face {
+  font-family: "Harabara Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: medium;
+  src: local("Harabara Bold"), url(font/Harabara.woff) format("woff");
+}
+section {
+  grid-area: mySection;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.consejos {
+  background-color: #d46aba;
+  border-radius: 200px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.consejos__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.consejos__parrafo {
+  line-height: 28px;
+  font-size: 1rem;
+}
+
+.productos {
+  background-image: linear-gradient(to left, pink, red, fuchsia);
+  border-radius: 200px;
+  padding: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  margin-bottom: 50px;
+}
+
+.productos__titulos {
+  text-shadow: fuchsia;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 320px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px 100px 1fr 100px;
+    grid-template-areas: "myHeader my@ myHeader" "myNav myNav myNav" "mySection mySection mySection" "myFooter myFooter myFooter";
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  background-color: lightpink;
+  word-spacing: normal;
+  text-align: center;
+}
+footer .redesSociales {
+  float: right;
+}
+
+footer p {
+  color: gray;
+  background-color: lightpink;
+  word-spacing: normal;
+  text-align: center;
+}
+
+.header {
+  background: url(img/back.png) no-repeat center;
+  background-size: cover;
+  min-height: 20vh;
+}
+
+.header .navbar {
+  background-color: transparent !important;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,47 @@
+footer {
+    color: gray;
+    background-color: lightpink;
+    word-spacing: normal;
+    text-align: center;
+  
+    .redsocial {
+      float: right;
+    }
+  }
+  footer p {
+    color: gray;
+    background-color: lightpink;
+    word-spacing: normal;
+    text-align: center;
+  }
+
+  .redsocial {
+    border: 3px solid #f00;
+    background-color: orangered;
+    height: 300px;
+    width: 600px;
+    padding: 20px;
+}
+.redsocial--nueva {
+    @extend .redsocial;
+    border-width: 3px;
+    color: #fff;
+    font-size: $large;
+}
+
+.enlacesInternos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+$color: (
+    pink: #e63fca
+);
+
+@each $name, $colores in $color {
+    .footer--#{$name}{
+        background-color: $colores;
+    }
+}
